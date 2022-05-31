@@ -467,7 +467,7 @@ namespace UnityEditor.Formats.Fbx.Exporter {
     }
 
     [FilePath("ProjectSettings/FbxExportSettings.asset",FilePathAttribute.Location.ProjectFolder)]
-    internal class ExportSettings : ScriptableObject
+    public class ExportSettings : ScriptableObject
     {
         public enum ExportFormat { ASCII = 0, Binary = 1}
 

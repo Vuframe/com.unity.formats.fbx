@@ -3,7 +3,7 @@
 namespace UnityEditor.Formats.Fbx.Exporter
 {
     [CustomEditor (typeof(ExportModelSettings))]
-    internal class ExportModelSettingsEditor : UnityEditor.Editor
+    public class ExportModelSettingsEditor : UnityEditor.Editor
     {
         private const float DefaultLabelWidth = 175;
         private const float DefaultFieldOffset = 18;
@@ -145,7 +145,7 @@ namespace UnityEditor.Formats.Fbx.Exporter
         Transform AnimationDest { get; }
     }
 
-    internal abstract class ExportOptionsSettingsBase<T> : ScriptableObject where T : ExportOptionsSettingsSerializeBase, new()
+    public abstract class ExportOptionsSettingsBase<T> : ScriptableObject where T : ExportOptionsSettingsSerializeBase, new()
     {
         [SerializeField]
         private T m_info = new T();
@@ -171,11 +171,11 @@ namespace UnityEditor.Formats.Fbx.Exporter
         }
     }
 
-    internal class ExportModelSettings : ExportOptionsSettingsBase<ExportModelSettingsSerialize>
+    public class ExportModelSettings : ExportOptionsSettingsBase<ExportModelSettingsSerialize>
     {}
 
     [System.Serializable]
-    internal abstract class ExportOptionsSettingsSerializeBase : IExportOptions
+    public abstract class ExportOptionsSettingsSerializeBase : IExportOptions
     {
         [SerializeField]
         private ExportSettings.ExportFormat exportFormat = ExportSettings.ExportFormat.ASCII;

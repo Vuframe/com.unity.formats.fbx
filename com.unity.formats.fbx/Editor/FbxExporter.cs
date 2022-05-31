@@ -4586,7 +4586,7 @@ namespace UnityEditor.Formats.Fbx.Exporter
         /// </para>
         /// </summary>
         [SecurityPermission(SecurityAction.LinkDemand)]
-        public static string ExportObjects (
+        internal static string ExportObjects (
             string filePath,
             UnityEngine.Object[] objects = null,
             IExportOptions exportOptions = null,

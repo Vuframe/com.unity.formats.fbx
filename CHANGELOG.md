@@ -1,5 +1,9 @@
 # Changes in Fbx Exporter
 
+## Vuframe Changes
+
+- fix: ExportObject and ExportObjects with options to public
+
 ## [4.2.0-pre.1] - 2022-04-20
 ### Changed
 - Added export options to Keep Instances and Embed Textures. Thank you to @hybridherbst for the additions.

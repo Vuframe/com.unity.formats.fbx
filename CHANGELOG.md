@@ -3,6 +3,7 @@
 ## Vuframe Changes
 
 - fix: ExportObject and ExportObjects with options to public
+- fix: class ExportModelSettingsSerialize and interface IExportOptions to public
 
 ## [4.2.0-pre.1] - 2022-04-20
 ### Changed

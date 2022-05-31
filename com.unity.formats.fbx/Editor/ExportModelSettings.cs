@@ -129,7 +129,7 @@ namespace UnityEditor.Formats.Fbx.Exporter
         }
     }
 
-    internal interface IExportOptions {
+    public interface IExportOptions {
         ExportSettings.ExportFormat ExportFormat { get; }
         ExportSettings.Include ModelAnimIncludeOption { get; }
         ExportSettings.LODExportType LODExportType { get; }
@@ -227,7 +227,7 @@ namespace UnityEditor.Formats.Fbx.Exporter
     }
 
     [System.Serializable]
-    internal class ExportModelSettingsSerialize : ExportOptionsSettingsSerializeBase
+    public class ExportModelSettingsSerialize : ExportOptionsSettingsSerializeBase
     {
         [SerializeField]
         private ExportSettings.Include include = ExportSettings.Include.ModelAndAnim;
